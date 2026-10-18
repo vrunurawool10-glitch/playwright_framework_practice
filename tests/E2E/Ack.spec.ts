@@ -50,6 +50,12 @@ const successmsg = await ackObj.getSuccessMessge();
 
     })
 
+     test('validate success message duplicate', async({page})=>{
+const successmsg = await ackObj.getSuccessMessge();
+           expect(successmsg?.trim()).toEqual("Thank you for your order!")
+
+    })
+
        test('check back home button functionality', async({page})=>{
 
         await ackObj.clickOnBackHome();
