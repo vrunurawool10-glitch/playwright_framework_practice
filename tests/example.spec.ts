@@ -15,4 +15,11 @@ test('get started link', async ({ page }) => {
 
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+
+  const str1:string = "vrunali";
+  const str2:string = " hello world  "
+
+  console.log(str2.trimStart());
+ console.log(str2.lastIndexOf(str1));
+
 });
